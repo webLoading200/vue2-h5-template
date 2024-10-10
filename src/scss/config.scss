@@ -1,0 +1,50 @@
+$content-bg-color: rgba(255, 255, 255, 0.08);
+$nameBox-padding: 12px 20px;
+$padding-bottom: 6px;
+// 颜色变量
+$bgColor: linear-gradient(270deg, #cd4559 0%, #ce5743 100%);
+$childBgColor: linear-gradient(270deg, #40a7ff 0%, #6edaff 100%);
+// 全局scss样式
+
+@mixin flex_space {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+//
+@mixin flex_column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// 弹性盒子----水平垂直居中
+@mixin flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 定位居中
+@mixin position_center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+// 文字超出显示省略号
+@mixin ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin bg_image($url) {
+  background-image: url($url + ".png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}

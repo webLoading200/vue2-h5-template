@@ -1,0 +1,78 @@
+@mixin bg-image($url) {
+  background-image: url($url + ".png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// 定位居中
+@mixin position-center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+// 文字超出显示省略号
+@mixin ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@for $i from 1 through 70 {
+  .m-#{$i} {
+    margin: $i + px;
+  }
+  .ml-#{$i} {
+    margin-left: $i + px;
+  }
+  .mr-#{$i} {
+    margin-right: $i + px;
+  }
+  .mlr-#{$i} {
+    margin-left: $i + px;
+    margin-right: $i + px;
+  }
+  .mt-#{$i} {
+    margin-top: $i + px;
+  }
+  .mb-#{$i} {
+    margin-bottom: $i + px;
+  }
+  .mtb-#{$i} {
+    margin-top: $i + px;
+    margin-bottom: $i + px;
+  }
+  .p-#{$i} {
+    padding: $i + px;
+  }
+  .pl-#{$i} {
+    padding-left: $i + px;
+  }
+  .pr-#{$i} {
+    padding-right: $i + px;
+  }
+
+  .plr-#{$i} {
+    padding-left: $i + px;
+    padding-right: $i + px;
+  }
+  .pt-#{$i} {
+    padding-top: $i + px;
+  }
+  .pb-#{$i} {
+    padding-bottom: $i + px;
+  }
+  .ptb-#{$i} {
+    padding-top: $i + px;
+    padding-bottom: $i + px;
+  }
+  .f-#{$i} {
+    font-size: $i + px;
+  }
+}

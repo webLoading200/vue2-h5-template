@@ -1,0 +1,1041 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+#app {
+  width: 100vw;
+  min-height: 100vh;
+  font-size: 18px;
+  color: #000;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.ltr {
+  direction: ltr;
+}
+.rtl {
+  direction: rtl;
+}
+.center {
+  text-align: center;
+}
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+input:-ms-clear {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+img {
+  border: 0;
+}
+
+input {
+  outline: none;
+}
+
+.animate__shakeYScale {
+  -webkit-animation-name: shakeYScale;
+  animation-name: shakeYScale;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* vue动画 */
+
+/* fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.28s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+/* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.5s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/* breadcrumb transition */
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all 0.5s;
+}
+
+/* 隐藏滚动条 */
+.delscrollbar::-webkit-scrollbar {
+  display: none;
+  /* Chrome Safari */
+}
+
+.delscrollbar {
+  scrollbar-width: none;
+  /* firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* 滚动条样式 */
+.scrollbar::-webkit-scrollbar-track-piece {
+  background: #d3dce6;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #99a9bf;
+  border-radius: 20px;
+}
+
+/*  */
+/* flex瀑布流布局 父*/
+.flex-water-2 {
+  column-count: 2;
+  column-gap: 0;
+  counter-reset: item-counter;
+  padding-bottom: 30px;
+}
+/* flex瀑布流布局 子*/
+.flex-water-2 > .flex-water-item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  counter-increment: item-counter;
+  margin: 0 1rem 1rem;
+}
+/* ****************************************** */
+/* flex瀑布流布局 父*/
+.flex-water-3 {
+  column-count: 3;
+  column-gap: 0;
+  counter-reset: item-counter;
+  padding-bottom: 30px;
+}
+/* flex瀑布流布局 子*/
+.flex-water-3 > .flex-water-item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  counter-increment: item-counter;
+  margin: 0 1rem 1rem;
+}
+/* ****************************************** */
+/* flex瀑布流布局 父*/
+.flex-water-4 {
+  column-count: 4;
+  column-gap: 0;
+  counter-reset: item-counter;
+  padding-bottom: 30px;
+}
+/* flex瀑布流布局 子*/
+.flex-water-4 > .flex-water-item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  counter-increment: item-counter;
+  margin: 0 1rem 1rem;
+}
+/* ****************************************** */
+/* flex瀑布流布局 父*/
+.flex-water-5 {
+  column-count: 5;
+  column-gap: 0;
+  counter-reset: item-counter;
+  padding-bottom: 30px;
+}
+/* flex瀑布流布局 子*/
+.flex-water-5 > .flex-water-item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  counter-increment: item-counter;
+  margin: 0 1rem 1rem;
+}
+/* ****************************************** */
+/* flex瀑布流布局 父*/
+.flex-water-6 {
+  column-count: 6;
+  column-gap: 0;
+  counter-reset: item-counter;
+  padding-bottom: 30px;
+}
+/* flex瀑布流布局 子*/
+.flex-water-6 > .flex-water-item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  counter-increment: item-counter;
+  margin: 0 1rem 1rem;
+}
+/* ****************************************** */
+/* flex瀑布流布局 父*/
+.flex-water-7 {
+  column-count: 7;
+  column-gap: 0;
+  counter-reset: item-counter;
+  padding-bottom: 30px;
+}
+/* flex瀑布流布局 子*/
+.flex-water-7 > .flex-water-item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  counter-increment: item-counter;
+  margin: 0 1rem 1rem;
+}
+/* ****************************************** */
+/* flex瀑布流布局 父*/
+.flex-water-8 {
+  column-count: 8;
+  column-gap: 0;
+  counter-reset: item-counter;
+  padding-bottom: 30px;
+}
+/* flex瀑布流布局 子*/
+.flex-water-8 > .flex-water-item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  counter-increment: item-counter;
+  margin: 0 1rem 1rem;
+}
+/* ****************************************** */
+/* flex瀑布流布局 父*/
+.flex-water-9 {
+  column-count: 9;
+  column-gap: 0;
+  counter-reset: item-counter;
+  padding-bottom: 30px;
+}
+/* flex瀑布流布局 子*/
+.flex-water-9 > .flex-water-item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  counter-increment: item-counter;
+  margin: 0 1rem 1rem;
+}
+/* ****************************************** */
+/* flex瀑布流布局 父*/
+.flex-water-10 {
+  column-count: 10;
+  column-gap: 0;
+  counter-reset: item-counter;
+  padding-bottom: 30px;
+}
+/* flex瀑布流布局 子*/
+.flex-water-10 > .flex-water-item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  counter-increment: item-counter;
+  margin: 0 1rem 1rem;
+}
+/* ****************************************** */
+/* flex瀑布流布局 父*/
+.flex-water-11 {
+  column-count: 11;
+  column-gap: 0;
+  counter-reset: item-counter;
+  padding-bottom: 30px;
+}
+/* flex瀑布流布局 子*/
+.flex-water-11 > .flex-water-item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  counter-increment: item-counter;
+  margin: 0 1rem 1rem;
+}
+/* ****************************************** */
+/* flex瀑布流布局 父*/
+.flex-water-12 {
+  column-count: 122;
+  column-gap: 0;
+  counter-reset: item-counter;
+  padding-bottom: 30px;
+}
+/* flex瀑布流布局 子*/
+.flex-water-12 > .flex-water-item {
+  box-sizing: border-box;
+  break-inside: avoid;
+  counter-increment: item-counter;
+  margin: 0 1rem 1rem;
+}
+/* ****************************************** */
+
+/* flex常用布局 */
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 父 */
+.flex-x {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-x-center-start {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-x-center-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-x-center-end {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-x-center-around {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-x-center-between {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-x-start-start {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.flex-x-start-center {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.flex-x-start-end {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.flex-x-start-around {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.flex-x-start-between {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.flex-x-end-start {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.flex-x-end-center {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.flex-x-end-end {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.flex-x-end-around {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.flex-x-end-between {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.flex-y {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flex-y-end-around {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.flex-y-end-between {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.flex-y-center-around {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-y-center-between {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-y-start-around {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.flex-y-start-between {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.flex-y-center-start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-y-center-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-y-center-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-y-start-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.flex-y-start-center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.flex-y-start-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.flex-y-end-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.flex-y-end-center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.flex-y-end-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-align-start {
+  align-items: flex-start;
+}
+
+.flex-align-end {
+  align-items: flex-end;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+/* 子 */
+.flex-child-auto {
+  margin: auto;
+}
+
+.flex-child-1 {
+  flex: 1;
+}
+
+.flex-child-grow {
+  flex-grow: 1;
+}
+
+.flex-child-center {
+  /* 覆盖父元素排列方式 */
+  align-self: center;
+}
+
+.flex-child-start {
+  /* 覆盖父元素排列方式 */
+  align-self: center;
+}
+
+.flex-child-end {
+  /* 覆盖父元素排列方式 */
+  align-self: center;
+}
+
+.flex-child-order1 {
+  order: 1;
+}
+
+.flex-child-order2 {
+  order: 2;
+}
+
+.flex-child-order3 {
+  order: 3;
+}
+
+.flex-child-order4 {
+  order: 4;
+}
+
+.flex-child-order5 {
+  order: 5;
+}
+
+.flex-child-order6 {
+  order: 6;
+}
+
+/* 内边距 */
+.p5 {
+  padding: 5px;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.p30 {
+  padding: 30px;
+}
+
+.p40 {
+  padding: 40px;
+}
+
+.p50 {
+  padding: 50px;
+}
+
+.pl5 {
+  padding-left: 5px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pl20 {
+  padding-left: 20px;
+}
+
+.pl30 {
+  padding-left: 30px;
+}
+
+.pl40 {
+  padding-left: 40px;
+}
+
+.pl50 {
+  padding-left: 50px;
+}
+
+.pr5 {
+  padding-right: 5px;
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+
+.pr30 {
+  padding-right: 30px;
+}
+
+.pr20 {
+  padding-right: 20px;
+}
+
+.pr40 {
+  padding-right: 40px;
+}
+
+.pr50 {
+  padding-right: 50px;
+}
+
+.pt5 {
+  padding-top: 5px;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.pt30 {
+  padding-top: 30px;
+}
+
+.pt40 {
+  padding-top: 40px;
+}
+
+.pt50 {
+  padding-top: 50px;
+}
+
+.pb5 {
+  padding-bottom: 5px;
+}
+
+.pb10 {
+  padding-bottom: 10px;
+}
+
+.pb20 {
+  padding-bottom: 20px;
+}
+
+.pb30 {
+  padding-bottom: 30px;
+}
+
+.pb40 {
+  padding-bottom: 40px;
+}
+
+.pb50 {
+  padding-bottom: 50px;
+}
+
+/* 外边距 */
+.m5 {
+  margin: 5px;
+}
+
+.m10 {
+  margin: 10px;
+}
+
+.m20 {
+  margin: 20px;
+}
+
+.m30 {
+  margin: 30px;
+}
+
+.m40 {
+  margin: 40px;
+}
+
+.m50 {
+  margin: 50px;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.ml30 {
+  margin-left: 30px;
+}
+
+.ml40 {
+  margin-left: 40px;
+}
+
+.ml50 {
+  margin-left: 50px;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+.mr32 {
+  margin-right: 32px;
+}
+.ml32 {
+  margin-left: 32px;
+}
+.pr32 {
+  padding-right: 32px;
+}
+.pl32 {
+  padding-left: 32px;
+}
+.mr40 {
+  margin-right: 40px;
+}
+
+.mr50 {
+  margin-right: 50px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+/* 文字 */
+.font-s {
+  font-size: 12px;
+}
+
+.font-m {
+  font-size: 16px;
+}
+
+.font-l {
+  font-size: 24px;
+}
+
+.font-title {
+  font-size: 30px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.text-remove-decoration {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-l {
+  text-align: left;
+}
+
+.text-r {
+  text-align: right;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-dark {
+  color: #000000;
+}
+
+.text-ling {
+  color: #01aaed;
+}
+
+.text-pro {
+  color: #999;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.nooutline {
+  outline: none;
+}
+
+/* 背景 */
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-dark {
+  background-color: #000000;
+}
+
+.bg-pro {
+  background-color: #eaeaea;
+}
+
+.bg-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-cover {
+  background-size: 100% 100%;
+}
+
+/* 大小 */
+.size-100 {
+  width: 100%;
+  height: 100%;
+}
+
+/* 盒子 */
+.border-radius-3 {
+  border-radius: 3;
+}
+
+.border-radius-5 {
+  border-radius: 5;
+}
+
+.border-radius-10 {
+  border-radius: 10;
+}
+
+.box-shadow {
+  box-shadow: 1px 3px 5px #eee;
+}
+
+.border {
+  border: 1px solid #999;
+}
+
+.border-top {
+  border-top: 1px solid #999;
+}
+
+.border-left {
+  border-left: 1px solid #999;
+}
+
+.border-right {
+  border-right: 1px solid #999;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #999;
+}
+
+/* .box-glow {
+	glow(#ffffff, 100)
+} */
+
+/* 定位 */
+.fixed {
+  position: fixed;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0px;
+}
+
+.fixed-left {
+  position: fixed;
+  left: 0px;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0px;
+}
+
+.fixed-right {
+  position: fixed;
+  right: 0px;
+}
